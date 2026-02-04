@@ -121,3 +121,4 @@ def generate_acronym(phrase):
 user_text = input("Can you please enter your text: ")
 outcome = generate_acronym(user_text)
 print(f"this is your acronym: {outcome}")
+
