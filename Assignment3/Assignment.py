@@ -9,7 +9,7 @@ while number <= 1000:
 print("Chương trình chuyển đổi Inches sang Centimeters")
 print("Nhập số âm để thoát chương trình")
 while True:
-    inches = float(input("Enter your Centimeters (negative to quit): "))
+    inches = float(input("enter your inches (negative to quit): "))
     if inches < 0:
         break
     cm = inches * 2.54
@@ -19,23 +19,18 @@ while True:
 print("Chương trình tìm số nhỏ nhất và lớn nhất")
 print("Nhập các số (nhấn Enter để kết thúc)")
 numbers = []
-
 while True:
     user_input = input("Nhập một số: ")
-
     if user_input == "":
         break
-
     try:
         number = float(user_input)
         numbers.append(number)
     except ValueError:
         print("Vui lòng nhập một số hợp lệ!")
-
 if len(numbers) > 0:
     smallest = min(numbers)
     largest = max(numbers)
-
     print("\n" + "=" * 45)
     print(f"Các số đã nhập: {numbers}")
     print(f"Số nhỏ nhất: {smallest}")
