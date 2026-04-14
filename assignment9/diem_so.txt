@@ -1,0 +1,4 @@
+huy,85
+khoi,90
+tu,78
+kien,100
