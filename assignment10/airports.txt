@@ -1,3 +1,0 @@
-LFLL,Lyon Saint-Exupery Airport,Lyon,FR
-VVTS,Tan Son Nhat International Airport,Ho Chi Minh City,VN
-EFHK,Helsinki Vantaa Airport,Helsinki,FI
