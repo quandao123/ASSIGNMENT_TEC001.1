@@ -9,7 +9,7 @@ def count_lines(filepath):# định nghĩa hàm
 
 ket_qua = count_lines('mbox-short.txt') #gọi hàm với file , luu kết qua vao biến kết quả
 print(f"Số dòng có nội dung: {ket_qua}")
-#
+
 #____________________2______________________2___________________
 def find_keyword_lines(filepath, keyword):
     line_numbers = []
@@ -28,9 +28,9 @@ def find_keyword_lines(filepath, keyword):
     return line_numbers
 
 
-# 1. Yêu cầu người dùng nhập từ khóa từ bàn phím
+# 1. nhập từ khóa từ bàn phím
 file_name = 'mbox-short.txt'
-key = input("Nhập từ khóa bạn muốn tìm kiếm: ")
+key = input("input your key: ")
 
 # 2. Gọi hàm đã viết ở trên
 result = find_keyword_lines(file_name, key)
@@ -38,9 +38,9 @@ result = find_keyword_lines(file_name, key)
 
 if isinstance(result, list):
     if len(result) > 0:
-        print(f"Tìm thấy từ khóa '{key}' tại {len(result)} vị trí.")
+        print(f"found '{key}' at {len(result)}.")
     else:
-        print(f"Không tìm thấy từ khóa '{key}' trong file.")
+        print(f"can not find'{key}' in file.")
 #
 #__________________3__________________________________3
 def process_mbox_to_upper(input_file):
@@ -56,12 +56,12 @@ def process_mbox_to_upper(input_file):
         with open('output.txt', 'w', encoding='utf-8') as f_out:#  Ghi vào file output, nó sẽ tự tạo 1 file mới
             f_out.write(upper_content)
 
-        print("Xong! Bạn hãy kiểm tra file 'output.txt' vừa được tạo nhé.")
+        print("done! check file 'output.txt' for the result.")
 
     except FileNotFoundError:
-        print(f"Lỗi: Không tìm thấy file '{input_file}'. Hãy chắc chắn file nằm cùng thư mục với code.")
+        print(f"error: file not found '{input_file}'.")
     except Exception as e:
-        print(f"Có lỗi xảy ra: {e}")
+        print(f"error : {e}")
 
 
 # Chạy hàm

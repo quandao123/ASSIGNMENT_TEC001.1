@@ -27,7 +27,7 @@ if __name__ == "__main__":
 #_____________________2________________________2______
 import requests
 
-city_name = input("Nhập tên thành phố: ")
+city_name = input("input city name: ")
 api_key = "c7226dbdd14114bb6cd21ba7b7728cae"
 url = f"https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={api_key}&units=metric&lang=vi"
 
@@ -38,7 +38,7 @@ if response.status_code == 200:
     print(f"Thời tiết: {data['weather'][0]['description']}")
     print(f"Nhiệt độ: {data['main']['temp']}°C")
 else:
-    print("Lỗi rồi! Có thể Key chưa kích hoạt hoặc sai tên thành phố.")
+    print("error : Invalid key or city name.")
 
 # #-------------------------3----------------
 from flask import Flask, json
